@@ -1,0 +1,151 @@
+
+*{
+    font-family: sans-serif;
+}
+
+
+body::after {
+    content: "";
+    /* background: url("./images/WishKoStar_V4.jpg"); */
+    background-image: linear-gradient(315deg, #026bb1 0%, #09c3fe 74%,#16efe6  100%);
+    /* opacity: 0.2; */
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-position: center;
+    z-index: -1;
+    
+  }
+main {
+    color: white;
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: auto;
+    vertical-align: middle;
+    
+}
+
+img:hover {
+    cursor: pointer;
+}
+header {
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    /* background-color: #026bb1; */
+    background-color: rgb(242, 251, 250);
+    height: 100%;
+    color: #026bb1;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+#navbar a {
+    color: #026bb1;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: rgba(2, 106, 175, 0.348);
+}
+
+#navbar li {
+    list-style-type: none;
+    font-size: 2rem;
+    margin-top: 1rem;
+    display: flex; 
+}
+
+#navbar img {
+    width: 290px;
+    cursor: pointer;
+}
+
+p {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+iframe {
+    margin-top: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        font-size: 14px;
+    }
+    #navbar {
+        overflow: hidden;
+        display: flex;
+        
+        /* background-color: #026bb1; */
+        background-color: rgb(242, 251, 250);
+        color: #026bb1;
+        position: fixed;
+        display: flex;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        height: 80px;
+        
+    }
+
+    #main-doc {
+        width: 100%;
+        padding: 20px;
+        margin-top: 80px;
+        box-sizing: border-box;
+    }
+    #navbar ul {
+        display: flex;
+        text-align: right;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+   #navbar li {
+    padding-left: 1rem;
+    font-size: 14px;
+   }
+    
+    #navbar img {
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    header .logo {
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
